@@ -1,0 +1,104 @@
+.about {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.about-top-section {
+    max-width: 980px;
+    margin: 0 auto;
+    .border {
+        height: 80px;
+        width: 234px;
+        position: relative;
+        margin-bottom: 136px;
+        .border-bottom {
+            border-bottom: $black solid 1.5 px;
+            position: absolute;
+            width: 55%;
+            white-space: nowrap;
+        }
+    }
+    h1 {
+        font-size: 60px;
+        padding-top: 90.5px;
+        font-family: Proxima;
+        font-weight: 100;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: Gill;
+    }
+}
+.about-bottom-section {
+    max-width: 980px;
+    margin: 0 auto;
+    margin-top: 95px;
+    margin-bottom: 179px;
+    .border {
+        height: 53px;
+        width: 345px;
+        position: relative;
+        margin-bottom: 39px;
+        .border-bottom {
+            position: absolute;
+            border-bottom: $black solid 1.5px;
+            width: 50%;
+            white-space: nowrap;
+        }
+    }
+    h3 {
+        font-size: 40px;
+        font-family: Proxima;
+        font-weight: 100;
+    }
+
+    .client {
+        max-width: 676px;
+        min-height: 150px; //max and min is good planning for what happens if the image or image text grows?
+        display: flex; //the reason our box could disappear is because something doesn't have a width
+        margin-bottom: 38px;
+        .client-image {
+            width: 260px;
+            height: 150px;
+            //img {
+            //height: 100%;
+
+            //}
+        }
+        .client1 {
+            background-image: url(../images/about-client-01.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .client-quote {
+            position: relative;
+            min-height: 50px;
+            width: 100%;
+            padding: 0 0 0 25px;
+            font-family: Gill;
+            .client-name {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                font-family: Proxima;
+                font-size: 20px;
+                color: $site-blue;
+            }
+            p:last-of-type {
+                margin-bottom: 25px;
+            }
+        }
+        .client2 {
+            background-image: url(../images/about-client-02.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .about {
+        padding: 10px;
+    }
+}

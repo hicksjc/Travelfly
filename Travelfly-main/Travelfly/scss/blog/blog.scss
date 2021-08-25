@@ -1,0 +1,68 @@
+.blog {
+    margin-top: 55.5px;
+    margin-bottom: 108px;
+    margin-left: 269px;
+    h3 {
+        font-family: Proxima;
+        margin-bottom: 31.5px;
+        font-size: 30px;
+        font-weight: 100;
+    }
+    .blog-border {
+        height: 53px;
+        width: 345px;
+        position: relative;
+        margin-bottom: 39px;
+        .blog-border-bottom {
+            position: absolute;
+            border-bottom: $black solid 1.5px;
+            width: 15%;
+            white-space: nowrap;
+        }
+    }
+        .blogNumber1 {
+            background-image: url(../images/Jun6.png);
+            width: 60px;
+            height: 60px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .blogNumber2{
+            background-image: url(../images/Jul23.png);
+            width: 60px;
+            height: 60px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        .blog-image {
+            margin-left: 80px;
+            background-image: url(../images/blog.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 900px;
+            height: 259px;
+            margin-top: -60px;
+        }
+        .blogText {
+            min-height: 90px;
+            width: 377px;
+            margin-left: 80px;
+            .blogText1 {
+                font-size: 15px;
+                font-family: Gill;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .blogText2 {
+                font-size: 13px;
+                color: $site-blue;
+                font-family: Gill;
+                margin-bottom: 100px;
+            }
+        }
+
+}

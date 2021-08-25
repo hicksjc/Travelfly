@@ -1,0 +1,80 @@
+.mid-section {
+    margin-top: 55.5px;
+    margin-bottom: 100px;
+    margin-left: 267px;
+    .border {
+        height: 53px;
+        width: 345px;
+        position: relative;
+        margin-bottom: 39px;
+        .border-bottom {
+            position: absolute;
+            border-bottom: $black solid 1.5px;
+            width: 50%;
+            white-space: nowrap;
+        }
+    }
+    h3 {
+        font-size: 40px;
+        font-family: Proxima;
+        font-weight: 100;
+    }
+    .row-special {
+        max-width: 676px;
+        min-height: 150px; //max and min is good planning for what happens if the image or image text grows?
+        display: flex; //the reason our box could disappear is because something doesn't have a width
+        margin-bottom: 38px;
+        .SpecialImage {
+            width: 199px;
+            height: 287px;
+        }
+        .special-offer-01 {
+            background-image: url(../images/special-offer-01.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .specialText {
+            position: relative;
+            min-height: 295px;
+            width: 100%;
+            padding: 0 0 0 20px;
+            .SpecialName {
+                font-family: Proxima;
+                font-size: 30px;
+                font-weight: 100;
+            }
+            .per-off {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding-top: 20px;
+                font-family: Proxima;
+                font-size: 20px;
+                color: orange;
+            }
+            p:last-of-type {
+                margin-bottom: 25px;
+            }
+            .specbtn {
+                @include siteButton(10px 10px, 40px);
+                margin: 10px auto 0 auto;
+                max-width: 133px;
+                min-height: 40px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 52px;
+                margin-bottom: 56px;
+            }
+        }
+        .special-offer-02 {
+            background-image: url(../images/special-offer-02.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}

@@ -1,0 +1,141 @@
+.promo-tours {
+    max-width: 1280px;
+    min-height: 304px;
+    margin: -50px auto 0 auto; // (0 auto)for when you want something centered, you must have a width for this. (top, right, bottom, left)
+    //background-color: blue;
+    display: flex; //used in the parent and is passed down to the children
+    //flex-wrap: wrap;
+    justify-content: space-around; //centers horizontally
+    padding-left: 175px;
+    padding-right: 175px;
+    //overflow: hidden;
+    position: relative;
+    font-family: Gill;
+    .promo {
+        height: 304px;
+        width: 236px;
+
+        img {
+            max-height: 100%;
+            max-width: 100;
+            min-height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.Israel {
+    position: relative;
+    .button {
+        position: absolute;
+        right: 50px;
+        top: 240px;
+        width: 133px;
+        height: 40px;
+        background-color: $site-blue;
+        border: none;
+        color: white;
+    }
+    .button1 {
+        border-radius: 20px;
+        font-family: Gill;
+    }
+}
+.USA {
+    position: relative;
+    .button {
+        position: absolute;
+        right: 50px;
+        top: 240px;
+        width: 133px;
+        height: 40px;
+        background-color: $site-blue;
+        border: none;
+        color: white;
+    }
+    .button2 {
+        border-radius: 20px;
+        font-family: Gill;
+    }
+}
+.AUS {
+    position: relative;
+    .button {
+        position: absolute;
+        right: 50px;
+        top: 240px;
+        width: 133px;
+        height: 40px;
+        background-color: $site-blue;
+        border: none;
+        color: white;
+    }
+    .button3 {
+        border-radius: 20px;
+        font-family: Gill;
+    }
+    
+}
+.first-text {
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    left: 50px;
+    font-size: 40px;
+    color: white;
+    font-family: Proxima;
+}
+.second-text {
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    left: 50px;
+    font-size: 40px;
+    color: white;
+    font-family: Proxima;
+}
+.third-text {
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    left: 60px;
+    font-size: 35px;
+    color: white;
+    font-family: Proxima;
+}
+.promo-USA {
+    height: 304px;
+    width: 236px;
+    background-image: linear-gradient(to right, $overlay, $overlay), url(../images/tour/tour-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.promo-israel {
+    height: 304px;
+    width: 236px;
+    background-image: linear-gradient(to right, $overlay, $overlay), url(../images/tour/tour-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.promo-AUS {
+    height: 304px;
+    width: 236px;
+    background-image: linear-gradient(to right, $overlay, $overlay), url(../images/tour/tour-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 1060px) {
+    .promo-tours {
+        width: 236px;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        .promo {
+            margin-bottom: 30px;
+        }
+    }
+}

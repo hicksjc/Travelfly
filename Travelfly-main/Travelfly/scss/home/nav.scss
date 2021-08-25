@@ -1,0 +1,33 @@
+nav {
+    max-width: 981px;
+    height: 60px;
+    margin: 0 auto;
+    border-bottom: $black solid 2px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        width: 92px;
+        height: 42px;
+    }
+    .links {
+        width: 485px;
+        height: 42px;
+        
+        align-self: center;
+        display: flex;
+        a {
+            border-right: 1px solid $site-blue;
+            padding-right: 15px;
+            padding-left: 15px;
+            text-decoration: none;
+            color: $black;
+            margin: auto auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: right;
+            &:last-child { //used to call a specific class, nested inside of another tag this allows you to manipulate and change specific things about the parent tags without messing up anything that you don't want to touch.
+                border: none;
+                padding-right: 0px;
+            }
+        }
+    }
+}
